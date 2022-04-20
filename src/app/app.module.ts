@@ -2,17 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { SideMenuComponent } from './layout/side-menu/side-menu.component';
+import { MainPageComponent } from './pages/main/main-page.component';
+import { PagesModule } from './pages/pages.module';
+import { SamplePageComponent } from './pages/sample-page/sample-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    MainPageComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MainPageComponent]
 })
 export class AppModule { }
